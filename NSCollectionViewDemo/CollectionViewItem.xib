@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="NSCollectionViewDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="iconImageView" destination="YdT-lg-Sl1" id="vIs-WI-QG7"/>
+                <outlet property="titleLabel" destination="QF5-Pr-oYb" id="KCI-q5-CJI"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YdT-lg-Sl1">
+                    <rect key="frame" x="40" y="60" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="DtF-kw-T85"/>
+                        <constraint firstAttribute="height" constant="40" id="liA-Wf-PqZ"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="o4b-nm-cFb"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QF5-Pr-oYb">
+                    <rect key="frame" x="8" y="23" width="104" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="7id-VN-JQn">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YdT-lg-Sl1" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="GXP-wy-sJl"/>
+                <constraint firstItem="QF5-Pr-oYb" firstAttribute="top" secondItem="YdT-lg-Sl1" secondAttribute="bottom" constant="20" id="H6Z-cx-yNA"/>
+                <constraint firstAttribute="trailing" secondItem="QF5-Pr-oYb" secondAttribute="trailing" constant="10" id="TlO-vn-tud"/>
+                <constraint firstItem="YdT-lg-Sl1" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="dAR-4x-PFN"/>
+                <constraint firstItem="QF5-Pr-oYb" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="sIl-oB-7FE"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
